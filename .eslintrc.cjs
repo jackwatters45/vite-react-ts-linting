@@ -1,15 +1,5 @@
 module.exports = {
   env: { browser: true, es2020: true },
-  extends: [
-    'airbnb',
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:import/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'eslint-config-prettier',
-  ],
   settings: {
     react: {
       version: 'detect',
@@ -22,12 +12,28 @@ module.exports = {
     },
   },
   parser: '@typescript-eslint/parser',
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'eslint-config-prettier',
+  ],
   plugins: ['react-refresh'],
   rules: {
+    'import/no-unresolved': 'error',
     'react-refresh/only-export-components': 'warn',
     'jsx-a11y/href-no-hash': ['off'],
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
     'max-len': [
       'warn',
       {
