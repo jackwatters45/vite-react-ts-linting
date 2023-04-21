@@ -1,7 +1,7 @@
-// TODO add airbnb config
 module.exports = {
   env: { browser: true, es2020: true },
   extends: [
+    'airbnb',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
@@ -26,5 +26,19 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
+    'jsx-a11y/href-no-hash': ['off'],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'max-len': [
+      'warn',
+      {
+        tabWidth: 2,
+        ignoreComments: false,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
   },
 };

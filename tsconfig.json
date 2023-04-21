@@ -17,6 +17,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "AllowImportingTsExtensions": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
