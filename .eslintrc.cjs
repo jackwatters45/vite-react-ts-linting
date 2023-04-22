@@ -1,5 +1,23 @@
 module.exports = {
   env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'eslint-config-prettier',
+  ],
+  plugins: [
+    'react-refresh',
+    '@typescript-eslint',
+    'react',
+    'import',
+    'jsx-a11y',
+    'react-hooks',
+    'simple-import-sort',
+  ],
   settings: {
     react: {
       version: 'detect',
@@ -19,32 +37,8 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:import/recommended',
-    'plugin:jsx-a11y/recommended',
-    'eslint-config-prettier',
-  ],
-  plugins: ['react-refresh'],
   rules: {
-    'import/no-unresolved': 'error',
-    'react-refresh/only-export-components': 'warn',
-    'jsx-a11y/href-no-hash': ['off'],
-    'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
-    'max-len': [
-      'warn',
-      {
-        tabWidth: 2,
-        ignoreComments: false,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true,
-      },
-    ],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };
