@@ -7,7 +7,7 @@ npm install
 
 ## Getting Started
 
-- replaced title an icon in index.html
+- replaced title and icon in index.html
 - replace name in package.json
 
 ## Todo
