@@ -1,5 +1,5 @@
 module.exports = {
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2022: true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -36,9 +36,14 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+  project: './tsconfig.json',
   },
   rules: {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+      'no-unused-vars': 'error',
+    'no-undef': 'error',
+    'no-unused-expressions': 'error',
+    'no-use-before-define': 'error'
   },
 };
