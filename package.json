@@ -12,9 +12,7 @@
     "compile": "tsc",
     "test": "jest",
     "preview": "vite preview",
-    "prepare": "husky install",
-    "rome": "rome format .",
-    "rome:fix": "rome format . --write"
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
