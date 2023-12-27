@@ -1,16 +1,17 @@
 # vite-react-ts-linting
 
-## Install
+## Simple Template
 
-degit jackwatters45/vite-react-ts-linting
-npm install
+- this is just a super simple template I use to set up my React Projects
+
+## Features
+
+- TS
+- Linting (Eslint + Prettier)
+- Dynamic alias for src file
+- Husky -> pre-commit lint of staged files
 
 ## Getting Started
 
-- replaced title and icon in index.html
+- replace title and icon in index.html
 - replace name in package.json
-
-## Todo
-
-- look into rome eventually (not sure if it's ready yet)
-- add some details to package.json
