@@ -10,8 +10,10 @@
 - Linting (Eslint + Prettier)
 - Dynamic alias for src file
 - Husky -> pre-commit lint of staged files
+- Basic setup for vercel, vite, vitest
 
 ## Getting Started
 
+- install dependencies
 - replace title and icon in index.html
 - replace name in package.json
