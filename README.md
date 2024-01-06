@@ -11,7 +11,7 @@
 - Dynamic alias for src file
 - Husky -> pre-commit lint of staged files
 - Basic setup for vercel, vite, vitest
--TailwindCss setup
+- TailwindCss setup
 
 ## Getting Started
 
